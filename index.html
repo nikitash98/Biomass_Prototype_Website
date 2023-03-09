@@ -2,10 +2,26 @@
 <html>
 <head>
 <title>Title of the document</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+<script src="code.js"></script>
+
 </head>
 
 <body>
-The content of the document......
+    <div class = "full_vid">
+        <video id="myVideo" >
+            <source src="resource/0001-0100_1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        <div class = "button-container">
+            <button class = "click-button" id = "left">Left</button>
+            <button class = "click-button" id = "right">Right</button>    
+        </div>
+      
+    </div>
+
 </body>
 
 </html>
