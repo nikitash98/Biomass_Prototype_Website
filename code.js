@@ -12,8 +12,9 @@ HTMLVideoElement.prototype.playBackwards = function() {
            clearInterval(intervalRewind);
            video.pause();
            $("#right").show()
-           $("#left").hide()
+           $("#left").show()
 
+           $("#left").css('visibility', 'hidden');
         }
         else {
             video.currentTime += -(1/fps);
@@ -32,6 +33,8 @@ var current = 0
         video.trigger('play')
         $("#right").hide()
         $("#left").hide()
+        $("#left").css('visibility', 'visible');
+
         forward = true
         cur_index += 1;
 
